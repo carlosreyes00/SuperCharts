@@ -9,10 +9,12 @@ import Foundation
 import SwiftData
 
 @Model
-final class Item {
-    var timestamp: Date
+final class Point {
+    var x: Double
+    var y: Double
     
-    init(timestamp: Date) {
-        self.timestamp = timestamp
+    init(x: Double = 0, y: Double = 0) {
+        self.x = x
+        self.y = y
     }
 }
